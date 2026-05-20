@@ -1,8 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: var(--tekst);
+  background: var(--achtergrond);
+}
+
 :root {
-  --blauw: #1a73e8;
-  --donker: #0f172a;
-  --licht: #f8fafc;
+  --primair: #0F172A;
+  --secundair: #2563EB;
+  --achtergrond: #F8FAFC;
+  --tekst: #1E293B;
   --wit: #ffffff;
-  --tekst: #333333;
   --radius: 6px;
 }
