@@ -21,31 +21,36 @@ body {
 }
 
 .navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 0 8rem;
+  height: 44px;
   background: var(--primair);
-  padding: 0 2rem;
-  height: 64px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  z-index: 10;
 }
 
 .logo a {
   color: var(--wit);
-  font-size: 1.1rem;
+  font-size: 0.8rem;
   font-weight: 700;
   text-decoration: none;
 }
 
 .nav-lijst {
   display: flex;
-  gap: 2rem;
+  gap: 1rem;
   list-style: none;
 }
 
 .nav-menu a {
   color: var(--wit);
   text-decoration: none;
-  font-size: 0.95rem;
+  font-size: 0.8rem;
 }
 
 .nav-knoppen {
@@ -57,8 +62,8 @@ body {
 .login-knop {
   color: var(--wit);
   text-decoration: none;
-  font-size: 0.9rem;
-  padding: 0.4rem 1rem;
+  font-size: 0.8rem;
+  padding: 0.3rem 0.8rem;
   border: 1px solid var(--wit);
   border-radius: var(--radius);
 }
@@ -66,8 +71,8 @@ body {
 .register-knop {
   color: var(--wit);
   text-decoration: none;
-  font-size: 0.9rem;
-  padding: 0.4rem 1rem;
+  font-size: 0.8rem;
+  padding: 0.3rem 0.8rem;
   background: var(--secundair);
   border-radius: var(--radius);
 }
