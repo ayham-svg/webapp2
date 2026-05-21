@@ -1,0 +1,14 @@
+.hero {
+  background-image: url('https://images.unsplash.com/photo-1778017458467-3f9fabff52cd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHw0fHx0cmF2ZWwlMjBkZXN0aW5hdGlvbiUyMHRyb3BpY2FsJTIwYmVhY2h8ZW58MXx8fHwxNzc4NDcxMzExfDA&ixlib=rb-4.1.0&q=80&w=1080');
+  background-size: cover;
+  background-position: center top;
+  height: 100vh;
+  position: relative;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
