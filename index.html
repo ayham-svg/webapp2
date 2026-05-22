@@ -16,10 +16,10 @@
 
       <nav class="nav-menu">
         <ul class="nav-lijst">
-          <li><a href="index.html" class="nav-link">Home</a></li>
-          <li><a href="destinations.html" class="nav-link">Destinations</a></li>
-          <li><a href="overons.html" class="nav-link">About Us</a></li>
-          <li><a href="contact.html" class="nav-link">Contact</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="destinations.html">Destinations</a></li>
+          <li><a href="overons.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
 
@@ -32,10 +32,61 @@
     <main>
       <section class="hero">
         <div class="hero-inhoud">
-          <h1 class="hero-titel">Discover Your Next Adventure</h1>
+          <h1 class="hero-titel">Discover Your Next<br>Adventure</h1>
+          <p class="hero-subtitel">Simple and unforgettable travel experiences.</p>
+          <div class="hero-knoppen">
+            <a href="zoeken.php" class="knop-zoeken">Search Trips</a>
+            <a href="boeken.php" class="knop-boeken">Book Now</a>
+          </div>
         </div>
       </section>
+
+      <section class="zoek-sectie">
+        <form class="zoek-form" action="zoeken.php" method="GET">
+          <input type="text" name="zoekterm" placeholder="Zoek een bestemming..." />
+          <button type="submit">Zoeken</button>
+        </form>
+      </section>
+
+      <section class="reizen-sectie">
+        <h2 class="sectie-titel">Populaire Reizen</h2>
+        <div class="reizen-grid">
+
+          <div class="reis-kaart">
+            <img src="fotos/reis1.jpg" alt="Reis 1" />
+            <div class="reis-info">
+              <h3>Bali, Indonesie</h3>
+              <p>10 dagen &bull; vanaf &euro; 899</p>
+              <a href="reis-detail.php?id=1">Bekijk reis</a>
+            </div>
+          </div>
+
+          <div class="reis-kaart">
+            <img src="fotos/reis2.jpg" alt="Reis 2" />
+            <div class="reis-info">
+              <h3>Dubai, VAE</h3>
+              <p>7 dagen &bull; vanaf &euro; 1199</p>
+              <a href="reis-detail.php?id=2">Bekijk reis</a>
+            </div>
+          </div>
+
+          <div class="reis-kaart">
+            <img src="fotos/reis3.jpg" alt="Reis 3" />
+            <div class="reis-info">
+              <h3>Barcelona, Spanje</h3>
+              <p>5 dagen &bull; vanaf &euro; 599</p>
+              <a href="reis-detail.php?id=3">Bekijk reis</a>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
     </main>
+
+    <footer class="footer">
+      <p>&copy; 2025 Lano & Ayham Travels. All rights reserved.</p>
+    </footer>
 
   </body>
 </html>
