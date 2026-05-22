@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primair: #0F172A;
+  --secundair: #2563EB;
+  --achtergrond: #F8FAFC;
+  --tekst: #1E293B;
+  --wit: #ffffff;
+  --radius: 6px;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: var(--tekst);
+  background: var(--achtergrond);
+}
+
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 0 8rem;
+  height: 44px;
+  background: var(--primair);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 10;
+}
+
+.logo a {
+  color: var(--wit);
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.nav-lijst {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}
+
+.nav-menu a {
+  color: var(--wit);
+  text-decoration: none;
+  font-size: 0.8rem;
+}
+
+.nav-knoppen {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.login-knop,
+.register-knop {
+  color: var(--wit);
+  text-decoration: none;
+  font-size: 0.8rem;
+  padding: 0.3rem 0.8rem;
+  border-radius: var(--radius);
+}
+
+.login-knop {
+  border: 1px solid var(--wit);
+}
+
+.register-knop {
+  background: var(--secundair);
+}
+
+.footer {
+  background: var(--primair);
+  color: var(--wit);
+  text-align: center;
+  padding: 0.9rem;
+  font-size: 0.8rem;
+  opacity: 0.9;
+}

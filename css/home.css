@@ -1,0 +1,146 @@
+.hero {
+  background-image: url('https://images.unsplash.com/photo-1778017458467-3f9fabff52cd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHw0fHx0cmF2ZWwlMjBkZXN0aW5hdGlvbiUyMHRyb3BpY2FsJTIwYmVhY2h8ZW58MXx8fHwxNzc4NDcxMzExfDA&ixlib=rb-4.1.0&q=80&w=1920');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-inhoud {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+.hero-subtitel {
+  color: var(--wit);
+  font-size: 0.95rem;
+  margin-top: 0.75rem;
+  opacity: 0.85;
+}
+
+.hero-titel {
+  color: var(--wit);
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+.hero-knoppen {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.knop-zoeken,
+.knop-boeken {
+  color: var(--wit);
+  text-decoration: none;
+  padding: 0.6rem 1.5rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+
+.knop-zoeken {
+  border: 2px solid var(--wit);
+}
+
+.knop-boeken {
+  background: var(--secundair);
+}
+
+.reizen-sectie {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+}
+
+.sectie-titel {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.reizen-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.reis-kaart {
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.reis-kaart img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.reis-info {
+  padding: 1rem;
+}
+
+.reis-info h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+}
+
+.reis-info p {
+  font-size: 0.85rem;
+  color: #666;
+  margin-bottom: 0.75rem;
+}
+
+.reis-info a {
+  color: var(--secundair);
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.zoek-sectie {
+  display: flex;
+  justify-content: center;
+  padding: 2.5rem 1rem;
+  background: var(--achtergrond);
+}
+
+.zoek-form {
+  display: flex;
+  gap: 0.5rem;
+  width: 100%;
+  max-width: 600px;
+}
+
+.zoek-form input {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: var(--radius);
+  font-size: 0.95rem;
+  outline: none;
+}
+
+.zoek-form button {
+  padding: 0.75rem 1.5rem;
+  background: var(--secundair);
+  color: var(--wit);
+  border: none;
+  border-radius: var(--radius);
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
