@@ -50,3 +50,22 @@
   font-size: 0.9rem;
   cursor: pointer;
 }
+
+.dest-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.dest-kaart {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.dest-kaart img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
