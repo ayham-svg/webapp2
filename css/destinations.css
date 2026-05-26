@@ -69,3 +69,44 @@
   height: 200px;
   object-fit: cover;
 }
+
+.dest-info {
+  padding: 1rem;
+}
+
+.dest-naam {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+}
+
+.dest-beschrijving {
+  font-size: 0.85rem;
+  color: #475569;
+  margin-bottom: 0.9rem;
+  line-height: 1.4;
+}
+
+.dest-prijs-rij {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.prijs {
+  color: var(--secundair);
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.per-persoon {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: #64748b;
+}
+
+.rating {
+  font-size: 0.85rem;
+  color: #64748b;
+}
