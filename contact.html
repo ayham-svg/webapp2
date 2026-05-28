@@ -30,7 +30,33 @@
     </header>
 
     <main>
+      <section class="contact-sectie">
+        <div class="contact-kaart">
+          <h1 class="contact-titel">Contact Us</h1>
+          <p class="contact-subtitel">We'd love to hear from you</p>
 
+          <form class="contact-form" action="php/contact-versturen.php" method="POST">
+            <div class="form-veld">
+              <label>Name</label>
+              <input type="text" name="naam" placeholder="John Doe" />
+            </div>
+            <div class="form-veld">
+              <label>Email</label>
+              <input type="email" name="email" placeholder="you@example.com" />
+            </div>
+            <div class="form-veld">
+              <label>Message</label>
+              <textarea name="bericht" placeholder="How can we help you?"></textarea>
+            </div>
+            <button type="submit" class="verstuur-knop">Send Message</button>
+          </form>
+
+          <div class="contact-info">
+            <p>&#9993; info@lanoayhamtravel.com</p>
+            <p>&#128222; +31 6 12345678</p>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="footer">
