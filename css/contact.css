@@ -53,3 +53,29 @@
   height: 120px;
   resize: vertical;
 }
+
+.verstuur-knop {
+  width: 100%;
+  padding: 0.85rem;
+  background: var(--secundair);
+  color: var(--wit);
+  border: none;
+  border-radius: 20px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 1.5rem;
+}
+
+.contact-info {
+  border-top: 1px solid #e2e8f0;
+  padding-top: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.contact-info p {
+  font-size: 0.85rem;
+  color: #475569;
+}
