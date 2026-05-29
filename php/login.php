@@ -30,5 +30,33 @@
       </div>
     </header>
 
+    <main>
+      <section class="login-sectie">
+        <div class="login-kaart">
+          <h1 class="login-titel">Welcome back</h1>
+          <p class="login-subtitel">Sign in to your account</p>
+
+          <form class="login-form" action="login.php" method="POST">
+            <div class="form-veld">
+              <label>Email</label>
+              <input type="email" name="email" placeholder="you@example.com" />
+            </div>
+            <div class="form-veld">
+              <label>Password</label>
+              <input type="password" name="wachtwoord" placeholder="••••••••" />
+            </div>
+            <a href="wachtwoord-vergeten.php" class="vergeten-link">Forgot Password?</a>
+            <button type="submit" class="login-knop-form">Login</button>
+          </form>
+
+          <p class="registreer-link">Don't have an account? <a href="registreren.php">Register</a></p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>&copy; 2025 Lano & Ayham Travels. All rights reserved.</p>
+    </footer>
+
   </body>
 </html>
