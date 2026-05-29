@@ -46,3 +46,37 @@
   font-size: 0.9rem;
   outline: none;
 }
+
+.vergeten-link {
+  display: block;
+  text-align: right;
+  font-size: 0.85rem;
+  color: var(--secundair);
+  text-decoration: none;
+  margin-bottom: 1.2rem;
+}
+
+.login-knop-form {
+  width: 100%;
+  padding: 0.85rem;
+  background: var(--secundair);
+  color: var(--wit);
+  border: none;
+  border-radius: 20px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 1.5rem;
+}
+
+.registreer-link {
+  text-align: center;
+  font-size: 0.85rem;
+  color: #64748b;
+}
+
+.registreer-link a {
+  color: var(--secundair);
+  font-weight: 600;
+  text-decoration: none;
+}
