@@ -43,7 +43,7 @@
             </div>
             <div class="form-veld">
               <label>Password</label>
-              <input type="password" name="wachtwoord" placeholder="••••••••" />
+              <input type="password" name="wachtwoord" />
             </div>
             <a href="wachtwoord-vergeten.php" class="vergeten-link">Forgot Password?</a>
             <button type="submit" class="login-knop-form">Login</button>

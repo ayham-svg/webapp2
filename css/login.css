@@ -1,0 +1,28 @@
+.login-sectie {
+  min-height: calc(100vh - 44px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 1rem;
+}
+
+.login-kaart {
+  background: #fff;
+  border-radius: 12px;
+  padding: 2.5rem;
+  width: 100%;
+  max-width: 420px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+}
+
+.login-titel {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+}
+
+.login-subtitel {
+  font-size: 0.9rem;
+  color: #64748b;
+  margin-bottom: 1.8rem;
+}
