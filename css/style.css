@@ -17,6 +17,13 @@ body {
   font-family: 'Inter', sans-serif;
   color: var(--tekst);
   background: var(--achtergrond);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
 }
 
 .navbar {

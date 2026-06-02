@@ -16,8 +16,8 @@ services:
       - db
 
   db:
-    image: mariadb:10.6
-    container_name: mariadb_webapp2
+    image: mysql:8.0
+    container_name: mysql_webapp2
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: rootpassword
