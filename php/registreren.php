@@ -11,6 +11,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   $wachtwoord_bevestig = $_POST['wachtwoord_bevestig'];
     // stap 1: gegevens ophalen uit het formulier
 
+    if ($wachtwoord !== $wachtwoord_bevestig) {
+        $fout = 'Wachtwoorden komen niet overeen.';
+    } else {
+        // hier komen de volgende
+
+
+    
+
 
     // stap 2: checken of wachtwoorden gelijk zijn
 
