@@ -1,4 +1,33 @@
-<?php session_start(); ?>
+<?php
+session_start();
+include 'db.php';
+
+$fout = '';
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+  $naam = $_POST['naam'];
+  $email = $_POST['email'];
+  $wachtwoord = $_POST['wachtwoord'];
+  $wachtwoord_bevestig = $_POST['wachtwoord_bevestig'];
+    // stap 1: gegevens ophalen uit het formulier
+
+
+    // stap 2: checken of wachtwoorden gelijk zijn
+
+
+    // stap 3: checken of email al bestaat in de database
+
+
+    // stap 4: wachtwoord versleutelen
+
+
+    // stap 5: gebruiker opslaan in de database
+
+
+    // stap 6: doorsturen naar login pagina
+
+}
+?>
 <!DOCTYPE html>
 <html lang="nl">
   <head>
