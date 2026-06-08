@@ -80,3 +80,8 @@
   font-weight: 600;
   text-decoration: none;
 }
+.login-fout {
+    color: #dc2626;
+    font-size: 0.85rem;
+    margin-bottom: 1rem;
+}
