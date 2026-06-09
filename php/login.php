@@ -1,4 +1,34 @@
-<?php session_start(); ?>
+<?php
+session_start();
+include 'db.php';
+
+$fout = '';
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+
+    $email     = $_POST['email'];
+    $wachtwoord = $_POST['wachtwoord'];
+
+    $zoekGebruiker = $databaseVerbinding->prepare("SELECT * FROM gebruikers WHERE email = ?");
+    $zoekGebruiker->execute([$email]);
+    $gebruiker = $zoekGebruiker->fetch();
+
+    if ($gebruiker && password_verify($wachtwoord, $gebruiker['wachtwoord'])) {
+        $_SESSION['gebruiker_id'] = $gebruiker['id'];
+        $_SESSION['naam']         = $gebruiker['naam'];
+        $_SESSION['rol']          = $gebruiker['rol'];
+
+        if ($gebruiker['rol'] === 'admin') {
+            header('Location: admin.php');
+        } else {
+            header('Location: mijn-account.php');
+        }
+        exit();
+    } else {
+        $fout = 'Email of wachtwoord is onjuist.';
+    }
+}
+?>
 <!DOCTYPE html>
 <html lang="nl">
   <head>
@@ -35,6 +65,10 @@
         <div class="login-kaart">
           <h1 class="login-titel">Welcome back</h1>
           <p class="login-subtitel">Sign in to your account</p>
+
+          <?php if ($fout !== ''): ?>
+            <p class="login-fout"><?php echo $fout; ?></p>
+          <?php endif; ?>
 
           <form class="login-form" action="login.php" method="POST">
             <div class="form-veld">
