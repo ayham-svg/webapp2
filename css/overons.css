@@ -53,19 +53,6 @@
     padding: 1.5rem;
   }
 
-  .stat-icoon {
-    width: 38px;
-    height: 38px;
-    background: rgba(37, 99, 235, 0.1);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--secundair);
-    font-size: 1rem;
-    margin-bottom: 0.6rem;
-  }
-
   .stat-item h3 {
     font-size: 0.95rem;
     font-weight: 700;
@@ -96,19 +83,6 @@
     border-radius: 15px;
     box-shadow: 0 1px 4px rgba(145, 145, 145, 0.25);
     padding: 1.5rem;  
-  }
-
-  .belofte-icoon {
-    width: 38px;
-    height: 38px;
-    background: rgba(37, 99, 235, 0.1);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--secundair);
-    font-size: 1rem;
-    flex-shrink: 0;
   }
 
   .belofte-tekst h3 {
