@@ -1,22 +1,13 @@
-* {
+﻿* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-:root {
-  --primair: #0F172A;
-  --secundair: #2563EB;
-  --achtergrond: #F8FAFC;
-  --tekst: #1E293B;
-  --wit: #ffffff;
-  --radius: 6px;
-}
-
 body {
   font-family: 'Inter', sans-serif;
-  color: var(--tekst);
-  background: var(--achtergrond);
+  color: #1E293B;
+  background: #F8FAFC;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -31,9 +22,9 @@ main {
   top: 0;
   left: 0;
   right: 0;
-  padding: 0 8rem;
+  padding: 0 128px;
   height: 44px;
-  background: var(--primair);
+  background: #0F172A;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -41,52 +32,52 @@ main {
 }
 
 .logo a {
-  color: var(--wit);
-  font-size: 0.8rem;
+  color: #ffffff;
+  font-size: 12.8px;
   font-weight: 700;
   text-decoration: none;
 }
 
 .nav-lijst {
   display: flex;
-  gap: 1rem;
+  gap: 16px;
   list-style: none;
 }
 
 .nav-menu a {
-  color: var(--wit);
+  color: #ffffff;
   text-decoration: none;
-  font-size: 0.8rem;
+  font-size: 12.8px;
 }
 
 .nav-knoppen {
   display: flex;
-  gap: 0.75rem;
+  gap: 12px;
   align-items: center;
 }
 
 .login-knop,
 .register-knop {
-  color: var(--wit);
+  color: #ffffff;
   text-decoration: none;
-  font-size: 0.8rem;
-  padding: 0.3rem 0.8rem;
-  border-radius: var(--radius);
+  font-size: 12.8px;
+  padding: 4.8px 12.8px;
+  border-radius: 6px;
 }
 
 .login-knop {
-  border: 1px solid var(--wit);
+  border: 1px solid #ffffff;
 }
 
 .register-knop {
-  background: var(--secundair);
+  background: #2563EB;
 }
 
 .footer {
-  background: var(--primair);
-  color: var(--wit);
+  background: #0F172A;
+  color: #ffffff;
   text-align: center;
-  padding: 0.9rem;
-  font-size: 0.8rem;
+  padding: 14.4px;
+  font-size: 12.8px;
   opacity: 0.9;
 }

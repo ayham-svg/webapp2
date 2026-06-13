@@ -16,6 +16,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if ($gebruiker && password_verify($wachtwoord, $gebruiker['wachtwoord'])) {
         $_SESSION['gebruiker_id'] = $gebruiker['id'];
         $_SESSION['naam']         = $gebruiker['naam'];
+        $_SESSION['email']        = $gebruiker['email'];
         $_SESSION['rol']          = $gebruiker['rol'];
 
         if ($gebruiker['rol'] === 'admin') {
