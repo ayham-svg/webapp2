@@ -38,7 +38,7 @@ if (!isset($_SESSION['gebruiker_id'])) {
 
     <main>
       <h1>Mijn account</h1>
-  <section class="account-overview">
+    <div class="account-overview">
         <div class="profile-icon">
             <img src="../images/150fa8800b0a0d5633abc1d1c4db3d87.jpg" alt="profile icon">
         </div>
@@ -47,12 +47,12 @@ if (!isset($_SESSION['gebruiker_id'])) {
             <div class="mail"><?php echo $_SESSION['email']; ?></div>
         </div>
             <a href="uitloggen.php" class="logout-knop">Logout</a>
-  </section>
+    </div>
 
-  <section class="booked-items"> 
+  <div class="booked-items"> 
     <p class="booked-items-text">Geboekte reizen</p>
 
-  </section>
+  </div>
     </main>
 
     <footer class="footer">
