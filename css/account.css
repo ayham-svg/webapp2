@@ -50,7 +50,7 @@
   display: flex;
   margin-top: 50px;
   margin-left: 530px;
-  background: #FFFFFF;
+  background: white;
   border-radius: 16px;
   padding: 20px 24px;
   width: 80%;
@@ -59,4 +59,18 @@
 
 .booked-items-text {
   margin: 0;
+}
+
+.logout-knop {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
+  border: 2px solid red;
+  border-radius: 999px;
+  color: red;
+  padding: 8px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  margin-left: auto;
 }

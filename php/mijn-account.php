@@ -33,7 +33,6 @@ if (!isset($_SESSION['gebruiker_id'])) {
             </ul>
         </nav>
         <div class="nav-knoppen">
-            <a href="uitloggen.php" class="login-knop">Logout</a>
         </div>
     </header>
 
@@ -47,6 +46,7 @@ if (!isset($_SESSION['gebruiker_id'])) {
             <div class="name"><?php echo $_SESSION['naam']; ?></div>
             <div class="mail"><?php echo $_SESSION['email']; ?></div>
         </div>
+            <a href="uitloggen.php" class="logout-knop">Logout</a>
   </section>
 
   <section class="booked-items"> 
