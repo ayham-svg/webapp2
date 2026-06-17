@@ -35,11 +35,11 @@ if (!isset($_SESSION['gebruiker_id'])) {
   </header>
 
   <main>
-    <p>Welkom, <?php echo htmlspecialchars($_SESSION['naam']); ?></p>
+    <p>Welkom, <?php echo $_SESSION['naam']; ?></p>
   </main>
 
   <footer class="footer">
-    <p>&copy; 2025 Lano & Ayham Travels. All rights reserved.</p>
+    <p>2025 Lano & Ayham Travels. All rights reserved.</p>
   </footer>
 
 </body>

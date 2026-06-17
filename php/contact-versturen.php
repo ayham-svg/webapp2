@@ -7,9 +7,9 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     exit();
 }
 
-$naam    = trim($_POST['naam'] ?? '');
-$email   = trim($_POST['email'] ?? '');
-$bericht = trim($_POST['bericht'] ?? '');
+$naam = $_POST['naam'];
+$email = $_POST['email'];
+$bericht = $_POST['bericht'];
 
 if ($naam === '' || $email === '' || $bericht === '') {
     header('Location: ../contact.html?fout=1');
