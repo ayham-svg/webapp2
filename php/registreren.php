@@ -100,7 +100,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   </main>
 
   <footer class="footer">
-    <p>&copy; 2025 Lano & Ayham Travels. All rights reserved.</p>
+    <p>2025 Lano & Ayham Travels. All rights reserved.</p>
   </footer>
 
 </body>

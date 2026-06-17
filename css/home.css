@@ -17,31 +17,31 @@
 
 .hero-subtitel {
   color: var(--wit);
-  font-size: 0.95rem;
-  margin-top: 0.75rem;
+  font-size: 15px;
+  margin-top: 12px;
   opacity: 0.85;
 }
 
 .hero-titel {
   color: var(--wit);
-  font-size: 2.2rem;
+  font-size: 35px;
   font-weight: 700;
 }
 
 .hero-knoppen {
   display: flex;
-  gap: 1rem;
+  gap: 16px;
   justify-content: center;
-  margin-top: 1.5rem;
+  margin-top: 24px;
 }
 
 .knop-zoeken,
 .knop-boeken {
   color: var(--wit);
   text-decoration: none;
-  padding: 0.6rem 1.5rem;
+  padding: 10px 24px;
   border-radius: 20px;
-  font-size: 0.9rem;
+  font-size: 14px;
 }
 
 .knop-zoeken {
@@ -55,19 +55,19 @@
 .reizen-sectie {
   max-width: 1100px;
   margin: 0 auto;
-  padding: 3rem 1.5rem;
+  padding: 48px 24px;
 }
 
 .sectie-titel {
-  font-size: 1.6rem;
+  font-size: 26px;
   font-weight: 700;
-  margin-bottom: 2rem;
+  margin-bottom: 32px;
 }
 
 .reizen-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
+  gap: 24px;
 }
 
 .reis-kaart {
@@ -83,24 +83,24 @@
 }
 
 .reis-info {
-  padding: 1rem;
+  padding: 16px;
 }
 
 .reis-info h3 {
-  font-size: 1rem;
+  font-size: 16px;
   font-weight: 700;
-  margin-bottom: 0.4rem;
+  margin-bottom: 6px;
 }
 
 .reis-info p {
-  font-size: 0.85rem;
+  font-size: 14px;
   color: #666;
-  margin-bottom: 0.75rem;
+  margin-bottom: 12px;
 }
 
 .reis-info a {
   color: var(--secundair);
-  font-size: 0.85rem;
+  font-size: 14px;
   font-weight: 600;
   text-decoration: none;
 }
@@ -108,33 +108,33 @@
 .zoek-sectie {
   display: flex;
   justify-content: center;
-  padding: 2.5rem 1rem;
+  padding: 40px 16px;
   background: var(--achtergrond);
 }
 
 .zoek-form {
   display: flex;
-  gap: 0.5rem;
+  gap: 8px;
   width: 100%;
   max-width: 600px;
 }
 
 .zoek-form input {
   flex: 1;
-  padding: 0.75rem 1rem;
+  padding: 12px 16px;
   border: 1px solid #ddd;
   border-radius: var(--radius);
-  font-size: 0.95rem;
+  font-size: 15px;
   outline: none;
 }
 
 .zoek-form button {
-  padding: 0.75rem 1.5rem;
+  padding: 12px 24px;
   background: var(--secundair);
   color: var(--wit);
   border: none;
   border-radius: var(--radius);
-  font-size: 0.95rem;
+  font-size: 15px;
   cursor: pointer;
 }
 

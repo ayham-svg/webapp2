@@ -6,7 +6,7 @@ $fout = '';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
-    $email     = $_POST['email'];
+    $email = $_POST['email'];
     $wachtwoord = $_POST['wachtwoord'];
 
     $zoekGebruiker = $databaseVerbinding->prepare("SELECT * FROM gebruikers WHERE email = ?");
@@ -15,8 +15,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     if ($gebruiker && password_verify($wachtwoord, $gebruiker['wachtwoord'])) {
         $_SESSION['gebruiker_id'] = $gebruiker['id'];
-        $_SESSION['naam']         = $gebruiker['naam'];
-        $_SESSION['rol']          = $gebruiker['rol'];
+        $_SESSION['naam'] = $gebruiker['naam'];
+        $_SESSION['rol'] = $gebruiker['rol'];
 
         if ($gebruiker['rol'] === 'admin') {
             header('Location: admin.php');
@@ -89,7 +89,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     </main>
 
     <footer class="footer">
-      <p>&copy; 2025 Lano & Ayham Travels. All rights reserved.</p>
+      <p>2025 Lano & Ayham Travels. All rights reserved.</p>
     </footer>
 
   </body>

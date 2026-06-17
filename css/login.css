@@ -3,75 +3,75 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 3rem 1rem;
+  padding: 48px 16px;
 }
 
 .login-kaart {
   background: #fff;
   border-radius: 12px;
-  padding: 2.5rem;
+  padding: 40px;
   width: 100%;
   max-width: 420px;
   box-shadow: 0 2px 12px rgba(0,0,0,0.08);
 }
 
 .login-titel {
-  font-size: 1.6rem;
+  font-size: 26px;
   font-weight: 700;
-  margin-bottom: 0.4rem;
+  margin-bottom: 6px;
 }
 
 .login-subtitel {
-  font-size: 0.9rem;
+  font-size: 14px;
   color: #64748b;
-  margin-bottom: 1.8rem;
+  margin-bottom: 29px;
 }
 
 .form-veld {
   display: flex;
   flex-direction: column;
-  gap: 0.4rem;
-  margin-bottom: 1.2rem;
+  gap: 6px;
+  margin-bottom: 19px;
 }
 
 .form-veld label {
-  font-size: 0.85rem;
+  font-size: 14px;
   font-weight: 600;
 }
 
 .form-veld input {
-  padding: 0.7rem 1rem;
+  padding: 11px 16px;
   border: 1px solid #e2e8f0;
   border-radius: var(--radius);
-  font-size: 0.9rem;
+  font-size: 14px;
   outline: none;
 }
 
 .vergeten-link {
   display: block;
   text-align: right;
-  font-size: 0.85rem;
+  font-size: 14px;
   color: var(--secundair);
   text-decoration: none;
-  margin-bottom: 1.2rem;
+  margin-bottom: 19px;
 }
 
 .login-knop-form {
   width: 100%;
-  padding: 0.85rem;
+  padding: 14px;
   background: var(--secundair);
   color: var(--wit);
   border: none;
   border-radius: 20px;
-  font-size: 0.95rem;
+  font-size: 15px;
   font-weight: 600;
   cursor: pointer;
-  margin-bottom: 1.5rem;
+  margin-bottom: 24px;
 }
 
 .registreer-link {
   text-align: center;
-  font-size: 0.85rem;
+  font-size: 14px;
   color: #64748b;
 }
 
@@ -80,8 +80,9 @@
   font-weight: 600;
   text-decoration: none;
 }
+
 .login-fout {
-    color: #dc2626;
-    font-size: 0.85rem;
-    margin-bottom: 1rem;
+  color: #dc2626;
+  font-size: 14px;
+  margin-bottom: 16px;
 }
