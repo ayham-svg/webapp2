@@ -1,0 +1,60 @@
+.container-admin {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 80px 24px 48px;
+}
+
+.container-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.admin-titel {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.knop-toevoegen {
+  background: var(--secundair);
+  color: var(--wit);
+  padding: 10px 20px;
+  border-radius: 6px;
+
+  font-size: 14px;
+}
+
+.reizen-tabel {
+  width: 100%;
+  background: var(--wit);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.reizen-tabel th {
+  background: var(--primair);
+  color: var(--wit);
+  padding: 12px 16px;
+  text-align: left;
+  font-size: 14px;
+}
+
+.reizen-tabel td {
+  padding: 12px 16px;
+  font-size: 14px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.knop-bewerken {
+  color: var(--secundair);
+
+  font-size: 14px;
+  margin-right: 12px;
+}
+
+.knop-verwijderen {
+  color: #dc2626;
+
+  font-size: 14px;
+}

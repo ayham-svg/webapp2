@@ -1,137 +1,72 @@
-.dest-sectie {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 48px 24px;
+.container-bestemmingen {
+max-width: 1100px;
+margin: 0 auto;
+padding: 80px 24px 48px;
 }
 
-.pagina-titel {
-  font-size: 32px;
-  font-weight: 700;
-  margin-bottom: 32px;
+.bestemmingen-titel {
+font-size: 28px;
+font-weight: 700;
+margin-bottom: 32px;
 }
 
-.filter-box {
-  background: #fff;
-  border: 1px solid #e2e8f0;
-  border-radius: 12px;
-  padding: 24px;
-  display: flex;
-  gap: 16px;
-  align-items: flex-end;
-  margin-bottom: 40px;
+.container-kaarten {
+display: flex;
+flex-wrap: wrap;
+gap: 24px;
 }
 
-.filter-veld {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-  flex: 1;
+.reis-kaart {
+width: 320px;
+background: var(--wit);
+border-radius: 8px;
+padding: 24px;
+box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
 
-.filter-veld label {
-  font-size: 13px;
-  font-weight: 600;
+.kaart-naam {
+font-size: 17px;
+font-weight: 700;
+margin-bottom: 6px;
 }
 
-.filter-veld input {
-  padding: 10px 14px;
-  border: 1px solid #e2e8f0;
-  border-radius: var(--radius);
-  font-size: 14px;
-  outline: none;
+.kaart-locatie {
+font-size: 13px;
+color: #64748b;
+margin-bottom: 10px;
 }
 
-.filter-knop {
-  padding: 10px 29px;
-  background: var(--secundair);
-  color: var(--wit);
-  border: none;
-  border-radius: 20px;
-  font-size: 14px;
-  cursor: pointer;
+.kaart-beschrijving {
+font-size: 14px;
+color: #475569;
+margin-bottom: 16px;
+line-height: 1.5;
 }
 
-.dest-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
+.kaart-prijs {
+font-size: 18px;
+font-weight: 700;
+color: var(--secundair);
+margin-bottom: 20px;
 }
 
-.dest-kaart {
-  background: #fff;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+.kaart-knoppen {
+display: flex;
+gap: 10px;
 }
 
-.dest-kaart img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
+.knop-bekijken {
+padding: 8px 18px;
+border: 1.5px solid var(--primair);
+border-radius: 6px;
+font-size: 14px;
+color: var(--primair);
 }
 
-.dest-info {
-  padding: 16px;
-}
-
-.dest-naam {
-  font-size: 16px;
-  font-weight: 700;
-  margin-bottom: 6px;
-}
-
-.dest-beschrijving {
-  font-size: 14px;
-  color: #475569;
-  margin-bottom: 14px;
-  line-height: 1.4;
-}
-
-.dest-prijs-rij {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 16px;
-}
-
-.prijs {
-  color: var(--secundair);
-  font-size: 18px;
-  font-weight: 700;
-}
-
-.per-persoon {
-  font-size: 13px;
-  font-weight: 400;
-  color: #64748b;
-}
-
-.rating {
-  font-size: 14px;
-  color: #64748b;
-}
-
-.dest-knoppen {
-  display: flex;
-  gap: 10px;
-}
-
-.bekijk-knop,
-.boek-knop {
-  flex: 1;
-  text-align: center;
-  padding: 8px 16px;
-  border-radius: 20px;
-  font-size: 14px;
-  text-decoration: none;
-}
-
-.bekijk-knop {
-  border: 1.5px solid var(--tekst);
-  color: var(--tekst);
-}
-
-.boek-knop {
-  background: var(--primair);
-  color: var(--wit);
+.knop-boeken {
+padding: 8px 18px;
+background: var(--primair);
+border-radius: 6px;
+font-size: 14px;
+color: var(--wit);
 }
