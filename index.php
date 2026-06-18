@@ -1,3 +1,11 @@
+<?php
+session_start();
+include 'php/db.php';
+
+$stmt = $databaseVerbinding->prepare("SELECT * FROM reizen");
+$stmt->execute([]);
+$alleReizen = $stmt->fetchAll();
+?>
 <!DOCTYPE html>
 <html lang="nl">
   <head>
@@ -11,13 +19,13 @@
 
     <header class="navbar">
       <div class="logo">
-        <a href="index.html">Lano & Ayham Travels</a>
+        <a href="index.php">Lano & Ayham Travels</a>
       </div>
 
       <nav class="nav-menu">
         <ul class="nav-lijst">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="destinations.html">Destinations</a></li>
+          <li><a href="index.php">Home</a></li>
+          <li><a href="destinations.php">Destinations</a></li>
           <li><a href="overons.html">About Us</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
@@ -52,32 +60,16 @@
         <h2 class="sectie-titel">Populaire Reizen</h2>
         <div class="reizen-grid">
 
+          <?php foreach ($alleReizen as $reis): ?>
           <div class="reis-kaart">
-            <img src="images/reis1.jpg" alt="Reis 1" />
             <div class="reis-info">
-              <h3>Bali, Indonesie</h3>
-              <p>10 dagen - vanaf € 899</p>
-              <a href="reis-detail.php?id=1">Bekijk reis</a>
+              <h3><?php echo $reis['naam']; ?></h3>
+              <p><?php echo $reis['locatie']; ?></p>
+              <p>vanaf € <?php echo $reis['prijs']; ?></p>
+              <a href="reis-detail.php?id=<?php echo $reis['id']; ?>">Bekijk reis</a>
             </div>
           </div>
-
-          <div class="reis-kaart">
-            <img src="images/reis2.jpg" alt="Reis 2" />
-            <div class="reis-info">
-              <h3>Dubai, VAE</h3>
-              <p>7 dagen - vanaf € 1199</p>
-              <a href="reis-detail.php?id=2">Bekijk reis</a>
-            </div>
-          </div>
-
-          <div class="reis-kaart">
-            <img src="images/reis3.jpg" alt="Reis 3" />
-            <div class="reis-info">
-              <h3>Barcelona, Spanje</h3>
-              <p>5 dagen - vanaf € 599</p>
-              <a href="reis-detail.php?id=3">Bekijk reis</a>
-            </div>
-          </div>
+          <?php endforeach; ?>
 
         </div>
       </section>

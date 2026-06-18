@@ -19,12 +19,12 @@ if (!isset($_SESSION['gebruiker_id'])) {
 
   <header class="navbar">
     <div class="logo">
-      <a href="../index.html">Lano & Ayham Travels</a>
+      <a href="../index.php">Lano & Ayham Travels</a>
     </div>
     <nav class="nav-menu">
       <ul class="nav-lijst">
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="../destinations.html">Destinations</a></li>
+        <li><a href="../index.php">Home</a></li>
+        <li><a href="../destinations.php">Destinations</a></li>
         <li><a href="../overons.html">About Us</a></li>
         <li><a href="../contact.html">Contact</a></li>
       </ul>
