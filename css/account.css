@@ -48,13 +48,10 @@
 
 .booked-items {
   display: flex;
+  flex-direction: column;
+  gap: 40px;
   margin-top: 50px;
   margin-left: 530px;
-  background: white;
-  border-radius: 16px;
-  padding: 20px 24px;
-  width: 80%;
-  box-shadow: 0 1px 4px rgba(145, 145, 145, 0.25);
 }
 
 .booked-items-text {
@@ -73,4 +70,14 @@
   font-size: 14px;
   font-weight: 600;
   margin-left: auto;
+}
+
+.boeking {
+  display: flex;
+  margin-right: 500px; 
+  background: white;
+  border-radius: 16px;
+  padding: 20px 24px;
+  width: 80%;
+  box-shadow: 0 1px 4px rgba(145, 145, 145, 0.25);
 }
