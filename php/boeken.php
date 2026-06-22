@@ -1,6 +1,6 @@
 <?php
 session_start();
-include 'php/db.php';
+include 'db.php';
 
 if (!isset($_SESSION['gebruiker_id'])) {
     header('Location: login.php');
@@ -9,13 +9,13 @@ if (!isset($_SESSION['gebruiker_id'])) {
 
 $id = $_GET["id"];
 
-$stmt = $databaseVerbinding->prepare("SELECT * FROM reizen");
-$stmt->execute([]);
-$alleReizen = $stmt->fetchAll();
+$stmt = $databaseVerbinding->prepare("SELECT * FROM reizen WHERE id = ?");
+$stmt->execute([$id]);
+$reis = $stmt->fetch();
 
 
 
-if($_SERVER('REQUEST_METHOD' === $_POST)) {
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $aantal = $_POST['aantal_personen'];
     $stmt = $databaseVerbinding->prepare("INSERT INTO boekingen (gebruiker_id, reis_id, aantal_personen)VALUES (?, ?, ?)");
     $stmt->execute([$_SESSION['gebruiker_id'], $id, $aantal]);
