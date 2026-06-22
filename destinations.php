@@ -50,7 +50,7 @@ $alleReizen = $stmt->fetchAll();
                 <p class="kaart-prijs">€ <?php echo $reis['prijs']; ?> p.p.</p>
                 <div class="kaart-knoppen">
                     <a href="reis-detail.php?id=<?php echo $reis['id']; ?>" class="knop-bekijken">Bekijken</a>
-                    <a href="boeken.php?id=<?php echo $reis['id']; ?>" class="knop-boeken">Boeken</a>
+                    <a href="php/boeken.php?id=<?php echo $reis['id']; ?>" class="knop-boeken">Boeken</a>
                 </div>
             </div>
             <?php endforeach; ?>
