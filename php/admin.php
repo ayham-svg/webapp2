@@ -43,29 +43,29 @@ $alleReizen = $stmt->fetchAll();
 <a href="reis-toevoegen.php" class="knop-toevoegen">+ Reis toevoegen</a>
 </div>
 
-<table class="reizen-tabel">
-<tr>
-<th>Naam</th>
-<th>Locatie</th>
-<th>Prijs</th>
-<th>Vertrek</th>
-<th>Terug</th>
-<th>Acties</th>
-</tr>
+<div class="reizen-lijst">
+<div class="lijst-header">
+<span>Naam</span>
+<span>Locatie</span>
+<span>Prijs</span>
+<span>Vertrek</span>
+<span>Terug</span>
+<span>Acties</span>
+</div>
 <?php foreach ($alleReizen as $reis): ?>
-<tr>
-<td><?php echo $reis['naam']; ?></td>
-<td><?php echo $reis['locatie']; ?></td>
-<td>€ <?php echo $reis['prijs']; ?></td>
-<td><?php echo $reis['datum_vertrek']; ?></td>
-<td><?php echo $reis['datum_terug']; ?></td>
-<td>
+<div class="lijst-rij">
+<span><?php echo $reis['naam']; ?></span>
+<span><?php echo $reis['locatie']; ?></span>
+<span>€ <?php echo $reis['prijs']; ?></span>
+<span><?php echo $reis['datum_vertrek']; ?></span>
+<span><?php echo $reis['datum_terug']; ?></span>
+<span>
 <a href="reis-bewerken.php?id=<?php echo $reis['id']; ?>" class="knop-bewerken">Bewerken</a>
 <a href="reis-verwijderen.php?id=<?php echo $reis['id']; ?>" class="knop-verwijderen">Verwijderen</a>
-</td>
-</tr>
+</span>
+</div>
 <?php endforeach; ?>
-</table>
+</div>
 </div>
 
 </body>
