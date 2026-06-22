@@ -55,6 +55,51 @@
 
 .knop-verwijderen {
   color: #dc2626;
-
   font-size: 14px;
+}
+
+.knop-terug {
+  color: var(--tekst);
+  font-size: 14px;
+}
+
+.reis-form {
+  background: var(--wit);
+  border-radius: 8px;
+  padding: 32px;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.reis-form label {
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.reis-form input,
+.reis-form textarea {
+  padding: 10px 14px;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+}
+
+.reis-form textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+.knop-opslaan {
+  background: var(--primair);
+  color: var(--wit);
+  padding: 10px 24px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-top: 10px;
 }
