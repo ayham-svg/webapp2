@@ -14,7 +14,7 @@ main {
 .over-info {
   max-width: 800px;
   margin: 40px auto;
-  background-color: white;
+  background-color: var(--wit);
   border-radius: 20px;
   box-shadow: 0 1px 4px rgba(145, 145, 145, 0.25);
   overflow: hidden;
@@ -40,14 +40,15 @@ main {
   margin: 0 auto 32px;
   padding: 0 24px;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-wrap: wrap;
   gap: 24px;
 }
 
 .stat-item {
   display: flex;
   flex-direction: column;
-  background-color: white;
+  background-color: var(--wit);
   border-radius: 15px;
   box-shadow: 0 1px 4px rgba(145, 145, 145, 0.25);
   padding: 24px;
@@ -70,7 +71,8 @@ main {
   margin: 0 auto 48px;
   padding: 0 24px;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-wrap: wrap;
   gap: 24px;
 }
 
@@ -79,7 +81,7 @@ main {
   flex-direction: column;
   align-items: flex-start;
   gap: 16px;
-  background-color: white;
+  background-color: var(--wit);
   border-radius: 15px;
   box-shadow: 0 1px 4px rgba(145, 145, 145, 0.25);
   padding: 24px;
@@ -100,7 +102,7 @@ main {
   max-width: 800px;
   margin: 0 auto 48px;
   padding: 32px;
-  background-color: #0f172a;
+  background-color: var(--primair);
   border-radius: 20px;
   display: flex;
   align-items: center;
@@ -115,7 +117,7 @@ main {
 .founders-label {
   font-size: 12px;
   font-weight: 700;
-  color: #2563eb;
+  color: var(--secundair);
   letter-spacing: 0.08em;
   text-transform: uppercase;
   display: block;
@@ -125,7 +127,7 @@ main {
 .founders h2 {
   font-size: 22px;
   font-weight: 700;
-  color: white;
+  color: var(--wit);
   margin-bottom: 12px;
 }
 
@@ -151,14 +153,14 @@ main {
 .avatar {
   width: 64px;
   height: 64px;
-  background-color: #2563eb;
+  background-color: var(--secundair);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 22px;
   font-weight: 700;
-  color: white;
+  color: var(--wit);
 }
 
 .avatar-item span {

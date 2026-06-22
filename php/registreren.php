@@ -40,6 +40,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <title>Lano & Ayham Travels - Register</title>
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/login.css" />
+    <script src="../wachtwoord-check.js"></script>
 </head>
 
 <body>
@@ -74,7 +75,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <p class="login-fout"><?php echo $fout; ?></p>
                 <?php endif; ?>
 
-                <form class="login-form" action="registreren.php" method="POST">
+                <form class="login-form" action="registreren.php" method="POST" onsubmit="return controleerWachtwoord()">
                     <div class="form-veld">
                         <label>Name</label>
                         <input type="text" name="naam" placeholder="John Doe" />
@@ -85,11 +86,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     </div>
                     <div class="form-veld">
                         <label>Password</label>
-                        <input type="password" name="wachtwoord" />
+                        <input type="password" name="wachtwoord" id="wachtwoord" />
                     </div>
                     <div class="form-veld">
                         <label>Confirm Password</label>
-                        <input type="password" name="wachtwoord_bevestig" />
+                        <input type="password" name="wachtwoord_bevestig" id="wachtwoord_bevestig" />
                     </div>
                     <button type="submit" class="login-knop-form">Register</button>
                 </form>

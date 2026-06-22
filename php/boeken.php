@@ -25,11 +25,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lano & Ayham Travels - Boeken</title>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
        <header class="navbar">
@@ -38,8 +39,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         </div>
         <nav class="nav-menu">
             <ul class="nav-lijst">
-                <li><a href="admin.php">Reizen</a></li>
-                <li><a href="admin.php?pagina=boekingen">Boekingen</a></li>
+                <li><a href="../index.php">Home</a></li>
+                <li><a href="../destinations.php">Bestemmingen</a></li>
+                <li><a href="../overons.html">Over Ons</a></li>
+                <li><a href="../contact.html">Contact</a></li>
             </ul>
         </nav>
         <div class="nav-knoppen">
