@@ -55,14 +55,6 @@ display: flex;
 gap: 10px;
 }
 
-.knop-bekijken {
-padding: 8px 18px;
-border: 1.5px solid var(--primair);
-border-radius: 6px;
-font-size: 14px;
-color: var(--primair);
-}
-
 .knop-boeken {
 padding: 8px 18px;
 background: var(--primair);
