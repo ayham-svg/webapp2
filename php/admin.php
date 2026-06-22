@@ -1,12 +1,12 @@
 <?php
 session_start();
 include 'db.php';
-
+ 
 if (!isset($_SESSION['rol']) || $_SESSION['rol'] !== 'admin') {
     header('Location: login.php');
     exit();
 }
-
+ 
 $stmt = $databaseVerbinding->prepare("SELECT * FROM reizen");
 $stmt->execute([]);
 $alleReizen = $stmt->fetchAll();
@@ -21,7 +21,7 @@ $alleReizen = $stmt->fetchAll();
 <link rel="stylesheet" href="../css/admin.css">
 </head>
 <body>
-
+ 
 <header class="navbar">
 <div class="logo">
 <a href="../index.php">Lano & Ayham Travels</a>
@@ -36,13 +36,13 @@ $alleReizen = $stmt->fetchAll();
 <a href="uitloggen.php" class="login-knop">Uitloggen</a>
 </div>
 </header>
-
+ 
 <div class="container-admin">
 <div class="container-top">
 <h1 class="admin-titel">Reizen beheren</h1>
 <a href="reis-toevoegen.php" class="knop-toevoegen">+ Reis toevoegen</a>
 </div>
-
+ 
 <div class="reizen-lijst">
 <div class="lijst-header">
 <span>Naam</span>
@@ -67,6 +67,6 @@ $alleReizen = $stmt->fetchAll();
 <?php endforeach; ?>
 </div>
 </div>
-
+ 
 </body>
 </html>
