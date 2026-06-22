@@ -1,26 +1,32 @@
 <?php
 session_start();
-include 'db.php';
+include 'php/db.php';
 
-if (!isset($_SESSION['gebruiker_id'])) {
-    header('Location: login.php');
+$id = $_GET["id"];
+
+$stmt = $databaseVerbinding->prepare("SELECT * FROM reizen");
+$stmt->execute([]);
+$alleReizen = $stmt->fetchAll();
+
+
+
+if($_SERVER('REQUEST_METHOD' === $_POST)) {
+    $aantal = $_POST['aantal_personen'];
+    $stmt = $databaseVerbinding->prepare("INSERT INTO boekingen (gebruiker_id, reis_id, aantal_personen)VALUES (?, ?, ?)");
+    $stmt->execute([$_SESSION['gebruiker_id'], $id, $aantal]);
+    header('Location: mijn-account.php');
     exit();
-}   
+}
 ?>
 <!DOCTYPE html>
-<html lang="nl">
-
+<html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lano & Ayham Travels - Mijn Account</title>
-    <link rel="stylesheet" href="../css/style.css" />
-    <link rel="stylesheet" href="../css/account.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lano & Ayham Travels - Reis Detail</title>
 </head>
-
 <body>
-
-    <header class="navbar">
+        <header class="navbar">
         <div class="logo">
             <a href="../index.php">Lano & Ayham Travels</a>
         </div>
@@ -33,32 +39,23 @@ if (!isset($_SESSION['gebruiker_id'])) {
             </ul>
         </nav>
         <div class="nav-knoppen">
+            <a href="php/login.php" class="login-knop">Inloggen</a>
+            <a href="php/registreren.php" class="register-knop">Registreren</a>
         </div>
     </header>
 
     <main>
       <h1>Mijn account</h1>
     <div class="account-overview">
-        <div class="profile-icon">
-            <img src="../images/150fa8800b0a0d5633abc1d1c4db3d87.jpg" alt="profile icon">
-        </div>
         <div class="user-info">
-            <div class="name"><?php echo $_SESSION['naam']; ?></div>
-            <div class="mail"><?php echo $_SESSION['email']; ?></div>
+            <div class="reis-naam"><?php echo $_SESSION['naam']; ?></div>
         </div>
             <a href="uitloggen.php" class="logout-knop">Logout</a>
     </div>
-
-  <div class="booked-items"> 
-    <p class="booked-items-text">Geboekte reizen</p>
-
-  </div>
     </main>
 
     <footer class="footer">
         <p>© 2025 Lano & Ayham Travels. All rights reserved.</p>
     </footer>
-
 </body>
-
 </html>
