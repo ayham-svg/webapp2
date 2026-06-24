@@ -32,8 +32,8 @@ $alleReizen = $query->fetchAll();
             </ul>
         </nav>
         <div class="nav-knoppen">
-            <a href="php/login.php" class="login-knop">Inloggen</a>
-            <a href="php/registreren.php" class="register-knop">Registreren</a>
+            <a href="login.php" class="login-knop">Inloggen</a>
+            <a href="registreren.php" class="register-knop">Registreren</a>
         </div>
     </header>
 
@@ -49,7 +49,7 @@ $alleReizen = $query->fetchAll();
                 <p class="kaart-beschrijving"><?php echo $reis['beschrijving']; ?></p>
                 <p class="kaart-prijs">€ <?php echo $reis['prijs']; ?> p.p.</p>
                 <div class="kaart-knoppen">
-                    <a href="php/boeken.php?id=<?php echo $reis['id']; ?>" class="knop-boeken" onclick="return confirm('Weet je zeker dat je deze reis wilt boeken?');">Boeken</a>
+                    <a href="boeken.php?id=<?php echo $reis['id']; ?>" class="knop-boeken" onclick="return confirm('Weet je zeker dat je deze reis wilt boeken?');">Boeken</a>
                 </div>
             </div>
             <?php endforeach; ?>

@@ -2,8 +2,12 @@
 session_start();
 include 'php/db.php';
 
-$query = $databaseVerbinding->prepare("SELECT * FROM reizen");
-$query->execute([]);
+$zoekterm = '';
+if (isset($_GET['zoekterm'])) {
+    $zoekterm = $_GET['zoekterm'];
+}
+$query = $databaseVerbinding->prepare("SELECT * FROM reizen WHERE naam LIKE ? OR locatie LIKE ?");
+$query->execute(["%$zoekterm%", "%$zoekterm%"]);
 $alleReizen = $query->fetchAll();
 ?>
 <!DOCTYPE html>
@@ -32,8 +36,8 @@ $alleReizen = $query->fetchAll();
       </nav>
 
       <div class="nav-knoppen">
-        <a href="php/login.php" class="login-knop">Login</a>
-        <a href="php/registreren.php" class="register-knop">Register</a>
+        <a href="login.php" class="login-knop">Login</a>
+        <a href="registreren.php" class="register-knop">Register</a>
       </div>
     </header>
 
@@ -50,8 +54,8 @@ $alleReizen = $query->fetchAll();
       </section>
 
       <section class="zoek-sectie">
-        <form class="zoek-form" action="zoeken.php" method="GET">
-          <input type="text" name="zoekterm" placeholder="Zoek een bestemming..." />
+        <form class="zoek-form" action="index.php" method="GET">
+          <input type="text" name="zoekterm" placeholder="Zoek een bestemming..." value="<?php echo $zoekterm; ?>" />
           <button type="submit">Zoeken</button>
         </form>
       </section>

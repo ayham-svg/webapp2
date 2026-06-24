@@ -1,6 +1,6 @@
 <?php
 session_start();
-include 'db.php';
+include 'php/db.php';
 
 $fout = '';
 
@@ -38,24 +38,24 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lano & Ayham Travels - Register</title>
-    <link rel="stylesheet" href="../css/style.css" />
-    <link rel="stylesheet" href="../css/login.css" />
-    <script src="../wachtwoord-check.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/login.css" />
+    <script src="js/wachtwoord-check.js"></script>
 </head>
 
 <body>
 
     <header class="navbar">
         <div class="logo">
-            <a href="../index.php">Lano & Ayham Travels</a>
+            <a href="index.php">Lano & Ayham Travels</a>
         </div>
 
         <nav class="nav-menu">
             <ul class="nav-lijst">
-                <li><a href="../index.php">Home</a></li>
-                <li><a href="../destinations.php">Destinations</a></li>
-                <li><a href="../overons.html">About Us</a></li>
-                <li><a href="../contact.html">Contact</a></li>
+                <li><a href="index.php">Home</a></li>
+                <li><a href="destinations.php">Destinations</a></li>
+                <li><a href="overons.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
 
