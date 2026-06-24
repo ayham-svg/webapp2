@@ -1,6 +1,6 @@
 <?php
 session_start();
-include 'db.php';
+include 'php/db.php';
 
 if (!isset($_SESSION['rol']) || $_SESSION['rol'] !== 'admin') {
     header('Location: login.php');
@@ -35,14 +35,14 @@ $reis = $query->fetch();
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Reis bewerken - Lano & Ayham Travels</title>
-<link rel="stylesheet" href="../css/style.css">
-<link rel="stylesheet" href="../css/admin.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/admin.css">
 </head>
 <body>
 
 <header class="navbar">
 <div class="logo">
-<a href="../index.php">Lano & Ayham Travels</a>
+<a href="index.php">Lano & Ayham Travels</a>
 </div>
 <nav class="nav-menu">
 <ul class="nav-lijst">
@@ -51,7 +51,7 @@ $reis = $query->fetch();
 </ul>
 </nav>
 <div class="nav-knoppen">
-<a href="uitloggen.php" class="login-knop">Uitloggen</a>
+<a href="php/uitloggen.php" class="login-knop">Uitloggen</a>
 </div>
 </header>
 
