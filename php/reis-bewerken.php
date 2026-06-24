@@ -18,16 +18,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $datum_vertrek = $_POST['datum_vertrek'];
     $datum_terug = $_POST['datum_terug'];
 
-    $stmt = $databaseVerbinding->prepare("UPDATE reizen SET naam = ?, locatie = ?, beschrijving = ?, prijs = ?, hotel = ?, datum_vertrek = ?, datum_terug = ? WHERE id = ?");
-    $stmt->execute([$naam, $locatie, $beschrijving, $prijs, $hotel, $datum_vertrek, $datum_terug, $id]);
+    $query = $databaseVerbinding->prepare("UPDATE reizen SET naam = ?, locatie = ?, beschrijving = ?, prijs = ?, hotel = ?, datum_vertrek = ?, datum_terug = ? WHERE id = ?");
+    $query->execute([$naam, $locatie, $beschrijving, $prijs, $hotel, $datum_vertrek, $datum_terug, $id]);
 
     header('Location: admin.php');
     exit();
 }
 
-$stmt = $databaseVerbinding->prepare("SELECT * FROM reizen WHERE id = ?");
-$stmt->execute([$id]);
-$reis = $stmt->fetch();
+$query = $databaseVerbinding->prepare("SELECT * FROM reizen WHERE id = ?");
+$query->execute([$id]);
+$reis = $query->fetch();
 ?>
 <!DOCTYPE html>
 <html lang="nl">
