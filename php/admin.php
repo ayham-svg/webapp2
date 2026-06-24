@@ -7,9 +7,9 @@ if (!isset($_SESSION['rol']) || $_SESSION['rol'] !== 'admin') {
     exit();
 }
  
-$stmt = $databaseVerbinding->prepare("SELECT * FROM reizen");
-$stmt->execute([]);
-$alleReizen = $stmt->fetchAll();
+$query = $databaseVerbinding->prepare("SELECT * FROM reizen");
+$query->execute([]);
+$alleReizen = $query->fetchAll();
 ?>
 <!DOCTYPE html>
 <html lang="nl">

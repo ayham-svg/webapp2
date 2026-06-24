@@ -5,9 +5,9 @@ if (!isset($_SESSION['gebruiker_id'])) {
     header('Location: login.php');
     exit();
 }
-$stmt = $databaseVerbinding->prepare("SELECT boekingen.aantal_personen, reizen.naam, reizen.locatie, reizen.datum_vertrek, reizen.datum_terug FROM boekingen JOIN reizen ON boekingen.reis_id = reizen.id WHERE boekingen.gebruiker_id = ?");
-$stmt->execute([$_SESSION['gebruiker_id']]);
-$boekingen = $stmt->fetchAll();
+$query = $databaseVerbinding->prepare("SELECT boekingen.aantal_personen, reizen.naam, reizen.locatie, reizen.datum_vertrek, reizen.datum_terug FROM boekingen JOIN reizen ON boekingen.reis_id = reizen.id WHERE boekingen.gebruiker_id = ?");
+$query->execute([$_SESSION['gebruiker_id']]);
+$boekingen = $query->fetchAll();
 ?>
 <!DOCTYPE html>
 <html lang="nl">

@@ -8,7 +8,7 @@ main {
   background-image: url(../images/photo-1589390512160-4b7c7d057032.jpg);
   background-size: cover;
   background-position: center;
-  border-radius: 20px 20px 0 0;
+  border-radius: 20px;
 }
 
 .over-info {
@@ -39,7 +39,6 @@ main {
   max-width: 850px;
   margin: 0 auto 32px;
   padding: 0 24px;
-  display: grid;
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
@@ -70,7 +69,6 @@ main {
   max-width: 850px;
   margin: 0 auto 48px;
   padding: 0 24px;
-  display: grid;
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
@@ -118,8 +116,6 @@ main {
   font-size: 12px;
   font-weight: 700;
   color: var(--secundair);
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
   display: block;
   margin-bottom: 8px;
 }

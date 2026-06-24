@@ -16,8 +16,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $datum_vertrek = $_POST['datum_vertrek'];
     $datum_terug = $_POST['datum_terug'];
 
-    $stmt = $databaseVerbinding->prepare("INSERT INTO reizen (naam, locatie, beschrijving, prijs, hotel, datum_vertrek, datum_terug) VALUES (?, ?, ?, ?, ?, ?, ?)");
-    $stmt->execute([$naam, $locatie, $beschrijving, $prijs, $hotel, $datum_vertrek, $datum_terug]);
+    $query = $databaseVerbinding->prepare("INSERT INTO reizen (naam, locatie, beschrijving, prijs, hotel, datum_vertrek, datum_terug) VALUES (?, ?, ?, ?, ?, ?, ?)");
+    $query->execute([$naam, $locatie, $beschrijving, $prijs, $hotel, $datum_vertrek, $datum_terug]);
 
     header('Location: admin.php');
     exit();

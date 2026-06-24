@@ -9,8 +9,8 @@ if (!isset($_SESSION['rol']) || $_SESSION['rol'] !== 'admin') {
 
 $id = $_GET['id'];
 
-$stmt = $databaseVerbinding->prepare("DELETE FROM reizen WHERE id = ?");
-$stmt->execute([$id]);
+$query = $databaseVerbinding->prepare("DELETE FROM reizen WHERE id = ?");
+$query->execute([$id]);
 
 header('Location: admin.php');
 exit();
