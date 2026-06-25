@@ -15,27 +15,12 @@ $alleReizen = $query->fetchAll();
     <title>Lano & Ayham Travels - Bestemmingen</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/destinations.css">
+    <script src="js/burger.js"></script>
 </head>
 
 <body>
 
-    <header class="navbar">
-        <div class="logo">
-            <a href="index.php">Lano & Ayham Travels</a>
-        </div>
-        <nav class="nav-menu">
-            <ul class="nav-lijst">
-                <li><a href="index.php">Home</a></li>
-                <li><a href="destinations.php">Bestemmingen</a></li>
-                <li><a href="overons.html">Over Ons</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="nav-knoppen">
-            <a href="login.php" class="login-knop">Inloggen</a>
-            <a href="registreren.php" class="register-knop">Registreren</a>
-        </div>
-    </header>
+    <?php include 'php/navbar.php'; ?>
 
     <div class="container-bestemmingen">
 
@@ -57,9 +42,7 @@ $alleReizen = $query->fetchAll();
 
     </div>
 
-    <footer class="footer">
-        <p>2025 Lano & Ayham Travels. Alle rechten voorbehouden.</p>
-    </footer>
+    <?php include 'php/footer.php'; ?>
 
 </body>
 

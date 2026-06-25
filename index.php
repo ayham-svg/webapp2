@@ -19,51 +19,12 @@ $alleReizen = $query->fetchAll();
     <title>Lano & Ayham Travels - Home</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/home.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <script src="js/burger.js"></script>
 </head>
 
 <body>
 
-    <header class="navbar">
-        <div class="logo">
-            <a href="index.php">Lano & Ayham Travels</a>
-        </div>
-
-
-
-        <nav class="nav-menu">
-            <ul class="nav-lijst" id="nav-lijst">
-                <li><a href="index.php">Home</a></li>
-                <li><a href="destinations.php">Destinations</a></li>
-                <li><a href="overons.html">About Us</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-            <button class="burger-icon" onclick="burgerMenu()">
-                ≡
-            </button>
-            <ul id="burger" hidden>
-                <li>
-                    <a class="burger-link" href="index.php">Home</a>
-                </li>
-                <li>
-                    <a class="burger-link" href="destinations.php">Destinations</a>
-                </li>
-                <li>
-                    <a class="burger-link" href="overons.html">About Us</a>
-                </li>
-                <li>
-
-                    <a class="burger-link" href="contact.html">Contact</a>
-                </li>
-            </ul>
-        </nav>
-
-        <div class="nav-knoppen">
-            <a href="login.php" class="login-knop">Login</a>
-            <a href="registreren.php" class="register-knop">Register</a>
-        </div>
-    </header>
+    <?php include 'php/navbar.php'; ?>
 
     <main>
         <section class="hero">
@@ -105,9 +66,7 @@ $alleReizen = $query->fetchAll();
 
     </main>
 
-    <footer class="footer">
-        <p>2025 Lano & Ayham Travels. All rights reserved.</p>
-    </footer>
+    <?php include 'php/footer.php'; ?>
 
 </body>
 

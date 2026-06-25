@@ -40,29 +40,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/login.css" />
     <script src="js/password.js"></script>
+    <script src="js/burger.js"></script>
 </head>
 
 <body>
 
-    <header class="navbar">
-        <div class="logo">
-            <a href="index.php">Lano & Ayham Travels</a>
-        </div>
-
-        <nav class="nav-menu">
-            <ul class="nav-lijst">
-                <li><a href="index.php">Home</a></li>
-                <li><a href="destinations.php">Destinations</a></li>
-                <li><a href="overons.html">About Us</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-
-        <div class="nav-knoppen">
-            <a href="login.php" class="login-knop">Login</a>
-            <a href="registreren.php" class="register-knop">Register</a>
-        </div>
-    </header>
+    <?php include 'php/navbar.php'; ?>
 
     <main>
         <section class="login-sectie">
@@ -97,9 +80,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         </section>
     </main>
 
-    <footer class="footer">
-        <p>2025 Lano & Ayham Travels. All rights reserved.</p>
-    </footer>
+    <?php include 'php/footer.php'; ?>
 
 </body>
 

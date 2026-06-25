@@ -31,24 +31,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lano & Ayham Travels - Boeken</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/burger.js"></script>
 </head>
 <body>
-       <header class="navbar">
-        <div class="logo">
-            <a href="index.php">Lano & Ayham Travels</a>
-        </div>
-        <nav class="nav-menu">
-            <ul class="nav-lijst">
-                <li><a href="index.php">Home</a></li>
-                <li><a href="destinations.php">Bestemmingen</a></li>
-                <li><a href="overons.html">Over Ons</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="nav-knoppen">
-            <a href="php/uitloggen.php" class="login-knop">Uitloggen</a>
-        </div>
-    </header>
+    <?php include 'php/navbar.php'; ?>
 
     <div class="container-boeken">
 <h1 class="boeken-titel">Reis boeken</h1>
@@ -62,9 +48,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 </form>
 </div>
 
-<footer class="footer">
-      <p>2025 Lano & Ayham Travels. All rights reserved.</p>
-    </footer>
+    <?php include 'php/footer.php'; ?>
 
     
     

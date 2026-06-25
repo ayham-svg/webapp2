@@ -17,23 +17,10 @@ $boekingen = $query->fetchAll();
     <title>Lano & Ayham Travels - Mijn Account</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/account.css" />
+    <script src="js/burger.js"></script>
 </head>
 <body>
-    <header class="navbar">
-        <div class="logo">
-            <a href="index.php">Lano & Ayham Travels</a>
-        </div>
-        <nav class="nav-menu">
-            <ul class="nav-lijst">
-                <li><a href="index.php">Home</a></li>
-                <li><a href="destinations.php">Bestemmingen</a></li>
-                <li><a href="overons.html">Over Ons</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="nav-knoppen">
-        </div>
-    </header>
+    <?php include 'php/navbar.php'; ?>
     <main>
       <h1>Mijn account</h1>
     <div class="account-overview">
@@ -57,9 +44,7 @@ $boekingen = $query->fetchAll();
         <?php endforeach; ?>
     </div>
     </main>
-    <footer class="footer">
-        <p>2025 Lano & Ayham Travels. Alle rechten voorbehouden.</p>
-    </footer>
+    <?php include 'php/footer.php'; ?>
 </body>
 </html>
  
