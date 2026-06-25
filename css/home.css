@@ -72,7 +72,7 @@
 .reis-kaart {
   border-radius: var(--radius);
   overflow: hidden;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .reis-info {
@@ -137,6 +137,32 @@
   background: rgba(0, 0, 0, 0.4);
 }
 
+.burger-link {
+    color: white;
+}
+
+.burger-icon {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    border: none;
+    background: none;
+    color: white;
+}
+
+#burger {
+    position: absolute;
+    flex-direction: row-reverse;
+    top: 60px;
+    right: 5vw;
+    background-color: black;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    z-index: 1000;
+    font-size: 18px;
+}
+
 @media (max-width: 768px) {
   .hero-titel {
     font-size: 24px;
@@ -156,4 +182,14 @@
   .reis-kaart {
     width: 100%;
   }
+
+
+  .nav-lijst {
+    display: none;
+  }
+
+  .burger-icon {
+    display: flex;
+  }
 }
+
